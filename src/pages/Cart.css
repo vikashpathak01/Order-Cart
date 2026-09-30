@@ -1,0 +1,147 @@
+.cartContainer {
+    color: black;
+
+    padding: 8px 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+
+
+}
+
+.cartProductContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cartProducts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+@media (max-width:900px) {
+    .cartProducts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:500px) {
+    .cartProducts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.cartitems {
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid black; */
+    padding: 8px 9px;
+    align-items: center;
+    gap: 8px;
+
+
+}
+
+.cart-product-image {
+    width: 100px;
+    place-items: center;
+    /* border: 1px solid black; */
+}
+
+.product-title {
+    font-size: 15px;
+
+}
+
+.cart-item-price {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    width: 100%;
+
+
+}
+
+.cart-price-container {
+    place-items: center;
+
+}
+
+.totalPrice {
+    display: flex;
+}
+
+.cart-delete{
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+.cart-delete:hover{
+    padding: 5px 10px;
+    background-color: rgb(231, 12, 12);
+   transform: scale(1.1);
+    
+}
+
+.cartEmptyContainer {
+    width: 100%;
+    height: calc(100vh - 74px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.shopNow {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.cartEmpty {
+    background-color: rgb(50, 44, 44);
+    color: white;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: transform 0.3s ease-out;
+    height: 35px;
+
+}
+
+.shopNow {
+    background-color: rgb(196, 84, 84);
+    color: white;
+    transition: transform 0.3s ease-out;
+
+}
+
+.shopNow:hover {
+    transform: scale(1.2)
+}
+
+.cartEmpty:hover {
+    transform: scale(1.2)
+}
+
+.place-order{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+}
