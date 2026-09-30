@@ -123,7 +123,7 @@
 
 }
 
-@media (max-width >=500px) {
+@media (width >=500px) {
     .navbar-mobile {
         display: none;
     }
